@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: left;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        body {
+            background-color: #99bff4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .navbar {
+            background-color: #216dbd;
+            padding: 1rem 0;
+        }
+
+        .navbar a {
+            color: #0723b1;
+            margin: 0 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="INDEX.html">Halaman Utama</a>
+            <a href="jadwal dan harga .html">Jadwal dan Harga</a>
+            <a href="wahana dan fasilitas.html">Wahana dan Fasilitas</a>
+            <a href="forum pendaftaran.html">Forum Pendaftaran</a>
+            <a href="about.us.HTML">About Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        <form action="proses_pendaftaran.php" method="post">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="konfirmasi_password">Konfirmasi Password:</label>
+            <input type="password" id="konfirmasi_password" name="konfirmasi_password" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat">
+
+            <label for="kota">Kota:</label>
+            <input type="text" id="kota" name="kota">
+
+            <label for="kode_pos">Kode Pos:</label>
+            <input type="text" id="kode_pos" name="kode_pos">
+
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
